@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset> <!--marca uma linha aonde vai fica o conteudo-->
+        <legend>Formulario</legend> <!---é a legenda da linha do fielderset-->
+        <form action="processador.php" method="post">
+
+            <label for="campoNome">nome</label><br>
+            <input type="text" name="nome" id="camponome" placeholder="Nome" required>
+            <br>
+
+            <label for="campoE-mail">E-mail</label><br>
+            <input type="text" name="E-mail" id="campoE-mail" placeholder="Email" required><br>
+            <br>
+
+            <label for="campoTelefone">Telefone</label><br>
+            <input type="tel" name="Telefone" id="campoTelefone" placeholder="Telefone" required><br>
+            <br>
+
+            <label for="Curso">Selecione o Curso:</label>
+            <select name="Curso" id="campoCurso">
+                <option value="presencial">Presencial</option>
+                <option value="semi-presencial">Semi-presencial</option>
+                <option value="ead" selected>EAD</option>
+            </select>
+            <br>
+            <br>
+            <label for="CampoMensagem">Mensagem</label><br>
+            <textarea name="Mensagem" id="campoMensagem" cols="30" rows="10" required></textarea><br> <!--está linha mostra uma caixa para o cliente digita a sua opção-->
+            <br>
+            <input type="submit" value="Envia">
+            <input type="reset" value="Limpa">
+
+    </fieldset>
+    </form>
+</body>
+</html>
